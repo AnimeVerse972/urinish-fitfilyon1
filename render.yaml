@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: your-bot-name
+    name: telegram-bot
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install --no-cache-dir --only-binary :all: pydantic && pip install -r requirements.txt
     startCommand: python main.py
     envVars:
       - key: BOT_TOKEN
