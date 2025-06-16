@@ -1,3 +1,2 @@
-aiogram==3.0.0
-pydantic==1.10.13
+aiogram==3.2.0
 aiohttp
